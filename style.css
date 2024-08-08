@@ -296,10 +296,10 @@ img {
 .recommend .column {
   width: 25%;
   padding-right: 12px;
+  padding-left: 12px;
   padding-bottom: 80px;
 }
 .recommend .card {
-  padding-left: 12px;
   border: 1px #dee2e6 solid;
   box-shadow: 0px 2px 6px #00000029;
   border-radius: 4px;
@@ -309,6 +309,7 @@ img {
   padding-left: 16px;
   padding-right: 16px;
 }
+
 .contact {
   background-color: #fbf2f2;
 }
@@ -437,6 +438,46 @@ img {
 .h3 {
   font-size: 48px;
 }
+@media (max-width: 992px) {
+  .banner {
+    background-image: url("./images/home-header-sm.png");
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+  }
+  .feature .container {
+    max-width: 768px;
+  }
+  .feature .column {
+    width: 50%;
+  }
+  .classical .container {
+    max-width: 375px;
+  }
+  .classical .column {
+    width: 100%;
+  }
+  .cooperate .container {
+    max-width: 696px;
+  }
+  .cooperate .column {
+    width: 100%;
+  }
+  .cooperate {
+    background-image: url("./images/index-bg-md.png");
+    background-size: cover;
+    max-width: 100%;
+  }
+  .recommend .column {
+    width: 50%;
+  }
+  .recommend .container {
+    max-width: 696px;
+  }
+  .contact .container {
+    max-width: 576px;
+  }
+}
 
 @media (max-width: 576px) {
   .narber .header-container {
@@ -470,11 +511,6 @@ img {
   .feature h3 {
     font-size: 24px;
   }
-  .feature {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
   .classical .container {
     max-width: 375px;
   }
